@@ -29,6 +29,8 @@ def get_url(url):
         print('cuowu')
     except exceptions.HTTPError as e:
         print('cuowu')
+    except:
+        print('cuowu')
     else:
         if page.status_code == 200:
 
@@ -52,7 +54,7 @@ for w in txt:
 # 识别后的网站
 list2 = []
 for url in list1:
-    eurl = r'https://'+url
+    eurl = r'http://'+url
 
     if(get_url(eurl)):
         list2.append(eurl)
