@@ -54,8 +54,9 @@ for w in txt:
 # 识别后的网站
 list2 = []
 for url in list1:
-    eurl = r'http://'+url
 
+    eurl = r'http://'+url
+    
     if(get_url(eurl)):
         list2.append(eurl)
     #print(get_url(eurl))
